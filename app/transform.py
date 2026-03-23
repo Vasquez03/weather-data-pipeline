@@ -16,6 +16,7 @@ def transform_json(data, district):
 
 def join_table(dfs):
     final_df = pd.concat(dfs, ignore_index=True)
+    fina_df = final_df.drop_duplicates(subset=["time","ID_Districts"])
 
     return final_df
 

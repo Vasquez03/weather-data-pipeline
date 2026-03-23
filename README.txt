@@ -11,10 +11,9 @@ The objective is to collect daily weather data from selected districts in Alajue
 - requests
 - SQL Server
 - SQLAlchemy
-- pyodbc
 
 ## Pipeline Architecture
-API -> Python -> SQL Server
+API -> Python -> SQL Server --> Power BI
 
 ## Project Structure
 - extract.py: extracts weather data from the API
@@ -47,6 +46,5 @@ Stores daily weather observations:
 - Validation to avoid reloading district catalog
 
 ## Future Improvements
-- Add Power BI dashboard
 - Add scheduling
 - Add more robust logging

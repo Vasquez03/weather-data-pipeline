@@ -15,17 +15,3 @@ CREATE TABLE weather_data(
 	ID_Districts INT NOT NULL,
 	FOREIGN KEY (ID_Districts) REFERENCES districts(ID_Districts)
 );
-
-
-SELECT
-	d.city,
-	w.time,
-	w.temperature_max,
-	w.temperature_min,
-	w.wind_speed_max
-
-FROM districts d
-INNER JOIN weather_data w
-ON w.ID_Districts = d.ID_Districts
-
-ORDER BY d.city, w.time
