@@ -53,26 +53,26 @@ API → Extract → Transform → Load → SQL Server
 
 ## 🗄️ Data Model
 
-### `districts`
+### districts
 
-  Column         Description
-  -------------- -----------------------
-  ID_Districts   Primary key
-  city           District name
-  latitude       Geographic coordinate
-  longitude      Geographic coordinate
+| Column        | Description            |
+|---------------|------------------------|
+| ID_Districts  | Primary key            |
+| city          | District name          |
+| latitude      | Geographic coordinate  |
+| longitude     | Geographic coordinate  |
 
-------------------------------------------------------------------------
+---
 
-### `weather_data`
+### weather_data
 
-  Column            Description
-  ----------------- --------------------------
-  time              Timestamp of observation
-  temperature_max   Maximum temperature
-  temperature_min   Minimum temperature
-  wind_speed_max    Maximum wind speed
-  ID_Districts      Foreign key
+| Column           | Description              |
+|------------------|--------------------------|
+| time             | Timestamp of observation |
+| temperature_max  | Maximum temperature      |
+| temperature_min  | Minimum temperature      |
+| wind_speed_max   | Maximum wind speed       |
+| ID_Districts     | Foreign key              |
 
 ------------------------------------------------------------------------
 
