@@ -1,52 +1,103 @@
-# Weather Data Pipeline
+# 🌦️ Weather Data Pipeline
 
-## Project Overview
-This project builds an end-to-end weather data pipeline using Python, SQL Server, and a public weather API.
+## 📌 Overview
 
-The objective is to collect daily weather data from selected districts in Alajuela, transform it, and store it in a relational database for further analysis.
+This project implements an end-to-end data pipeline that extracts,
+transforms, and loads (ETL) daily weather data using Python and SQL
+Server.
 
-## Technologies Used
-- Python
-- pandas
-- requests
-- SQL Server
-- SQLAlchemy
-- pyodbc
+The pipeline retrieves data from a public weather API for selected
+districts in Alajuela, Costa Rica, processes it, and stores it in a
+relational database for further analysis and visualization.
 
-## Pipeline Architecture
-API -> Python -> SQL Server
+\---
 
-## Project Structure
-- extract.py: extracts weather data from the API
-- transform.py: transforms JSON data into pandas DataFrames
-- db.py: handles SQL Server connection and validation
-- load.py: loads data into SQL Server
-- main.py: orchestrates the pipeline execution
+## 🎯 Objectives
 
-## Data Model
+* Build a modular ETL pipeline using Python\\
+* Integrate external API data into a structured database\\
+* Design a relational schema for weather data\\
+* Ensure data quality through validation and duplicate handling
+
+\---
+
+## 🛠️ Technologies Used
+
+* Python
+* pandas
+* requests
+* SQL Server
+* SQLAlchemy
+* pyodbc
+
+\---
+
+## ⚙️ Pipeline Architecture
+
+API → Extract → Transform → Load → SQL Server
+
+\---
+
+## 📂 Project Structure
+
+&#x20;   .
+    ├── extract.py     # Extracts weather data from API
+    ├── transform.py   # Transforms JSON into structured DataFrames
+    ├── load.py        # Loads data into SQL Server
+    ├── db.py          # Manages database connection and validation
+    └── main.py        # Orchestrates the ETL pipeline
+
+
+\---
+
+## 🗄️ Data Model
+
 ### districts
-Stores district information:
-- ID_Districts
-- city
-- latitude
-- longitude
 
-### weather_data
-Stores daily weather observations:
-- time
-- temperature_max
-- temperature_min
-- wind_speed_max
-- ID_Districts
+Column         Description
 
-## Key Features
-- API data extraction
-- JSON transformation with pandas
-- Relational schema in SQL Server
-- Duplicate prevention using pandas and SQL unique constraint
-- Validation to avoid reloading district catalog
+\---
 
-## Future Improvements
-- Add Power BI dashboard
-- Add scheduling
-- Add more robust logging
+ID\_Districts   Primary key
+city           District name
+latitude       Geographic coordinate
+longitude      Geographic coordinate
+
+### weather\_data
+
+Column            Description
+
+\---
+
+time              Timestamp of observation
+temperature\_max   Maximum temperature
+temperature\_min   Minimum temperature
+wind\_speed\_max    Maximum wind speed
+ID\_Districts      Foreign key
+
+\---
+
+## 🚀 Key Features
+
+* Automated data extraction from a public API\\
+* JSON processing and transformation using pandas\\
+* Structured storage in SQL Server\\
+* Duplicate prevention using pandas and SQL constraints\\
+* Validation logic to prevent reloading static district data
+
+\---
+
+## 🔮 Future Improvements
+
+* Integration with Power BI for visualization\\
+* Pipeline scheduling (cron or Airflow)\\
+* Enhanced logging and monitoring\\
+* Error handling and retry mechanisms
+
+\---
+
+## 👨‍💻 Author
+
+Edwin Vásquez Vargas
+Electrical Engineer
+
