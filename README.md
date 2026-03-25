@@ -12,6 +12,25 @@ relational database for further analysis and visualization.
 
 ------------------------------------------------------------------------
 
+## 📊 Dashboard Preview
+
+This dashboard was built in Power BI to analyze the relationship between wind speed and temperature across districts.
+
+![Dashboard](images/weather_dashboard.png)
+
+------------------------------------------------------------------------
+
+
+## 📈 Key Insights
+
+- A negative relationship between wind speed and temperature was observed in most districts
+- Atenas showed little to no correlation between these variables
+- Higher wind speeds tend to be associated with slightly lower temperatures
+
+
+------------------------------------------------------------------------
+
+
 ## 🎯 Objectives
 
 -   Build a modular ETL pipeline using Python\
@@ -88,7 +107,7 @@ API → Extract → Transform → Load → SQL Server
 
 ## 🔮 Future Improvements
 
--   Integration with Power BI for visualization\
+-   Integration with Power BI for advanced visualization\
 -   Pipeline scheduling (cron or Airflow)\
 -   Enhanced logging and monitoring\
 -   Error handling and retry mechanisms
