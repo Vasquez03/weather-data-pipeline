@@ -97,5 +97,5 @@ API → Extract → Transform → Load → SQL Server
 
 ## 👨‍💻 Author
 
-Edwin\
+Edwin Vásquez Vargas\
 Electrical Engineer
