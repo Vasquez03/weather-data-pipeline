@@ -117,4 +117,4 @@ API → Extract → Transform → Load → SQL Server
 ## 👨‍💻 Author
 
 Edwin Vásquez Vargas\
-Electrical Engineer
+Electrical Engineer | Data Analyst | ETL Pipelines & Power BI
